@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main class="bg-teal-950 flex justify-center h-screen w-screen p-10">
+        <div class="border-2 h-fit rounded-md p-2 w-80 ">
+            <h1 class="text-white font-bold w-full text-xl ">Register Your Account </h1>
+            <form method="POST" action="/register">
+                <input class="w-full mt-5 outline-none rounded-md decoration-none px-2 py-1 " type="text" name="username" placeholder="Username" required>
+                
+                <input class="w-full mt-3 outline-none rounded-md decoration-none px-2 py-1 " type="email" name="email" placeholder="Email" required>
+                <input class="w-full mt-3 outline-none rounded-md decoration-none px-2 py-1 " type="text" name="mobileNumber" placeholder="Mobile Number" required>
+                <input class="w-full mt-3 outline-none rounded-md px-2 py-1 " type="password" name="password" placeholder="Password" required>
+                <input class="w-full mb-4 mt-3 outline-none rounded-md decoration-none px-2 py-1 " type="number" name="age" placeholder="Age" required>
+                
+                <button id="registerBtn" class="w-full text-white bg-blue-600 rounded-md p-1 hover:bg-blue-700 " onclick="register()" type="submit">Register</button>
+            </form>
+            <!-- <div class="flex  mt-4 justify-center items-center bg-gray-300 px-5 py-1 rounded-md hover:bg-white">
+                <img src="https://w7.pngwing.com/pngs/326/85/png-transparent-google-logo-google-text-trademark-logo-thumbnail.png" alt="google logo" class="h-5 w-5">
+                <a class="ml-5" href="/auth/google">Login with Google</a>
+            </div> -->
+            <a href="/login" class="text-blue-400 w-full text-sm mt-2 block">Already a user? Log in account</a>
+        </div>
+    </main>
+</body>
+
+</html>

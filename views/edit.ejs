@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../public/styleSheets/edit.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main class="">
+        <div id="formContainer" class=" h-screen flex flex-col items-center py-4 bg-gradient-to-r from-indigo-500 via-purple-350 to-pink-500">
+            <h2 class="text-zinc-900 border-2 rounded-md border-black px-2 py-1 text-2xl font-bold mb-5">View And Update</h2>
+            <form method="post" action="/edit/<%= post._id %>" class="max-sm:w-[80%] border-2 border-black rounded-md w-2/4 p-2 text-black items-center flex flex-col">
+                <input id="heading" class="block bg-[#080A52] text-white decoration-none mb-1 rounded-md p-2 w-full font-bold outline-none " type="text" name="heading" placeholder="Title" value="<%= post.heading %>" required>
+                <textarea id="content" class="block max-sm:h-[25rem] bg-[#080A52] text-white rounded-md p-2 w-full outline-none h-80 resize-none" name="content" placeholder="What's on your mind?"><%= post.content %></textarea> 
+                <div class="flex justify-evenly mt-2 w-[50%] px-1">
+                    <a href="/profile" class="bg-blue-700 hover:bg-green-700 text-white rounded-md py-1 w-12 px-2">Back</a>
+                    <button class="bg-blue-700 hover:bg-red-700 text-white py-1 px-2 border-1-black rounded-md" type="submit" onclick="">Update</button>
+                    
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="./javascripts/profile.js"></script>
+</body>
+</html>

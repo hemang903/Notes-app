@@ -1,0 +1,33 @@
+#addBtn:hover{
+    background-image: linear-gradient(to right, rgb(115, 115, 244), rgb(247, 99, 235));
+    transition: 0.3s;
+    color: white;
+    font-weight: 400;
+    border-color: chartreuse;
+    cursor: pointer;
+}
+
+.logout:hover{
+    border-color: black;
+    box-shadow: 2px 5px 10px black;
+    background-color: brown;
+    transition: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.notesBox{
+    top: 0;
+    z-index: 0; 
+    position: fixed;
+}
+
+#content{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.noteDiv:hover{
+    transition: 0.5s;
+    transition-duration: 0.3s;
+    background-color: rgb(58, 32, 1);
+}
